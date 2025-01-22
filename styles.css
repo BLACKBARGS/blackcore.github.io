@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Resetando alguns estilos básicos */
 * {
     margin: 0;
     padding: 0;
@@ -7,54 +7,85 @@
 
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
 }
 
 header {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
 }
 
-main {
+/* Estilo da seção de boas-vindas */
+main section {
     padding: 20px;
-    background-color: white;
-    max-width: 1200px;
-    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
 }
 
 .produtos-destaque {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.produtos-destaque h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos produtos */
+.produtos {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .produto {
-    border: 1px solid #ddd;
-    padding: 15px;
+    width: calc(50% - 20px); /* Faz os produtos ficarem lado a lado */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
+.produto img {
+    width: 100%; /* Faz as imagens se ajustarem ao tamanho do bloco */
+    height: auto;
+    max-width: 200px; /* Limita o tamanho máximo da imagem */
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produto {
+        width: 100%; /* Produtos ocupam toda a largura na tela menor */
+    }
 }
