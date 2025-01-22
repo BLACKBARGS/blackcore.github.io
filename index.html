@@ -1,103 +1,46 @@
-/* Resetando estilos padrões */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackCore - Sua Loja Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    <main>
+        <section class="intro">
+            <h1>Bem-vindo à BlackCore</h1>
+            <p>Aqui você encontra os melhores produtos com a qualidade que você merece!</p>
+        </section>
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
+        <section class="produtos-destaque">
+            <h2>Produtos em Destaque</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <img src="images/produto1.jpg" alt="Produto 1">
+                    <p>Produto 1</p>
+                </div>
+                <div class="produto">
+                    <img src="images/produto2.png" alt="Produto 2">
+                    <p>Produto 2</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-}
-
-/* Estilo para a seção de introdução */
-.intro {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.intro h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.intro p {
-    font-size: 1.2rem;
-    color: #666;
-}
-
-/* Estilo para os produtos em destaque */
-.produtos-destaque {
-    margin-top: 40px;
-}
-
-.produtos-destaque h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Exibição dos produtos */
-.produtos {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-items: center;
-}
-
-.produto {
-    text-align: center;
-    max-width: 200px; /* Limitar o tamanho das imagens */
-}
-
-.produto img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.produto p {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Estilos do rodapé */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
-}
+    <footer>
+        <p>&copy; 2025 BlackCore - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
