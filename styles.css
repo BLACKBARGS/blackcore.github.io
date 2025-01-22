@@ -94,3 +94,15 @@ header nav ul li a {
     font-size: 1rem;
     color: #555;
 }
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;  /* Faz com que o rodapé fique na parte inferior */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
